@@ -1,23 +1,27 @@
 {
-  "name": "my-prime",
-  "version": "1.0.1",
+  "name": "amr2mp3",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "dev": "nodemon ./src/index.js --exec babel-node"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jinnatul/isPrime.git"
+    "url": "git+https://github.com/jinnatul/amr2mp3.git"
   },
   "author": "Morol",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jinnatul/isPrime/issues"
+    "url": "https://github.com/jinnatul/amr2mp3/issues"
   },
-  "homepage": "https://github.com/jinnatul/isPrime#readme",
+  "homepage": "https://github.com/jinnatul/amr2mp3#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^4.4.0"
   }
 }
