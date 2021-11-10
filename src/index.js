@@ -2,7 +2,7 @@ import { exec } from "child_process";
 import path from "path";
 import ffmpegPath from "ffmpeg-static";
 
-export const amr2mp3 = (filepath, outputDir = "./src/mp3", outputName) => {
+const amr2mp3 = (filepath, outputDir = "./src/mp3", outputName) => {
   return new Promise((resolve, reject) => {
     const { ext, name: filename } = path.parse(filepath);
     if (ext.toLocaleLowerCase() != ".amr") {
@@ -27,3 +27,5 @@ export const amr2mp3 = (filepath, outputDir = "./src/mp3", outputName) => {
     });
   });
 };
+
+export default amr2mp3;

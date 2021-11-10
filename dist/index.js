@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.amr2mp3 = undefined;
 
 var _child_process = require("child_process");
 
@@ -17,7 +16,7 @@ var _ffmpegStatic2 = _interopRequireDefault(_ffmpegStatic);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var amr2mp3 = exports.amr2mp3 = function amr2mp3(filepath) {
+var amr2mp3 = function amr2mp3(filepath) {
   var outputDir = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "./src/mp3";
   var outputName = arguments[2];
 
@@ -43,3 +42,5 @@ var amr2mp3 = exports.amr2mp3 = function amr2mp3(filepath) {
     });
   });
 };
+
+exports.default = amr2mp3;
